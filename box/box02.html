@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: monospace;
+            background-color: rgb(76, 76, 76);
+            margin: 0px;
+        }
+        header {
+            background-color: rgb(191, 198, 161);
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        nav {
+            background-color: blue;
+            color: white;
+            font-size: bold;
+            padding: 3px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: rgb(191, 198, 161);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px rgba(37, 36, 36, 0.465);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Notícias - Política - Economia - Tecnologia</h2>
+            <section id="noticias">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolore architecto vitae eaque tempore suscipit provident ut corporis delectus! Magnam ullam odit blanditiis itaque aut repellat, quo neque quisquam quis.</p>
+                <aside>Artigo escrito por "desconhecido"</aside>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Encode Systems</p>
+    </footer>
+</body>
+</html>
