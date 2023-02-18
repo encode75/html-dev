@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árvore da Vida</title>
+    <style>
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            line-height: 0.3em;
+        }
+        
+        #container {
+            height: 100vh;
+            width: 100vw;
+            background: black url("imagens/folhas2.jpg") center center repeat fixed;
+            background-size: auto;
+            /*
+            background-repeat: no-repeat;
+            background-position: center;
+            */
+            position: relative;
+            /*background-color: brown;*/
+
+        }
+
+        div { /*#conteudo*/
+            background-color: red;
+            position: absolute;
+            
+            border: 2px solid black;
+            border-radius: 75px;
+        }
+
+        div:hover {
+            border: 3px solid blue;
+            cursor: pointer;
+            
+        }
+
+
+        .pais {
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            top: 10px;
+        }
+
+        #pai {
+            background: black url("imagens/idoso-m.jpeg") center center no-repeat fixed;
+            background-size: contain;
+            left: 35%;
+            transform: translate(-50%, 0%);
+        }
+
+        #mae {
+            background: black url("imagens/idoso-f.jpg") center center no-repeat fixed;
+            background-size: contain;
+            left: 65%;
+            transform: translate(-50%, 0%);
+        }
+
+        #voce {
+            height: 150px;
+            width: 150px;
+            background: black url("imagens/adulto-m.png") center center no-repeat fixed;
+            background-size: contain;
+            left: 50%;
+            top: 47%;
+            transform: translate(-50%, -50%);
+        }
+
+        .filhos {
+            height: 100px;
+            width: 100px;
+            top: 75%;
+        }
+
+        #filho1 {
+            background: black url("imagens/jovem-m.png") center center no-repeat fixed;
+            background-size: contain;
+            left: 20%;
+            transform: translate(-50%, 0%);
+        }
+
+        #filho2 {
+            background: black url("imagens/jovem-f.jpg") center center no-repeat fixed;
+            background-size: contain;
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+
+        #filho3 {
+            background: black url("imagens/crianca-f.jpeg") center center no-repeat fixed;
+            background-size: contain;
+            left: 80%;
+            transform: translate(-50%, 0%);
+        }   
+
+        .desc_pais {
+            height: 60px;
+            width: 200px;
+            background-color: rgba(105, 102, 102, 0.477);
+            top: 120px;
+            border: 2px solid black;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        #desc_pai {
+            left: 35%;
+            transform: translate(-50%, 0%);
+        }
+
+        #desc_mae {
+            left: 65%;
+            transform: translate(-50%, 0%);
+        }
+
+        #desc_voce {
+            height: 60px;
+            width: 200px;
+            background-color: rgba(105, 102, 102, 0.477);
+            border: 2px solid black;
+            border-radius: 15px;
+            text-align: center;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, 100%);
+        }
+
+        .desc_filhos {
+            height: 60px;
+            width: 200px;
+            background-color: rgba(105, 102, 102, 0.477);
+            top: 89%;
+            border: 2px solid black;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        #desc_filho1 {
+            left: 20%;
+            transform: translate(-50%, 0%);
+        }
+
+        #desc_filho2 {
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+        
+        #desc_filho3 {
+            left: 80%;
+            transform: translate(-50%, 0%);
+        }
+
+    </style>
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+    <section id="container">
+        <div class="pais" id="pai"onclick="teste('pai.html')"><p id="menu">...</p></div>
+        <div class="pais" id="mae">Mãe</div>
+        <div class="voce" id="voce">Você</div>  
+        <div class="filhos" id="filho1">Filho 1</div>
+        <div class="filhos" id="filho2">Filho 2</div>
+        <div class="filhos" id="filho3">Filho 3</div>
+
+        <div class="desc_pais" id="desc_pai">
+            <p>Jose da Silva</p>
+            <p>1950</p>
+        </div>
+        <div class="desc_pais" id="desc_mae">
+            <p>Joana da Silva</p>
+            <p>1954</p>
+        </div>
+        <div class="desc_voce" id="desc_voce">
+            <p>Carlos Silva</p>
+            <p>1975</p>
+        </div>
+        <div class="desc_filhos" id="desc_filho1">
+            <p>Fernando da Silva</p>
+            <p>1995</p>
+        </div>
+        <div class="desc_filhos" id="desc_filho2">
+            <p>Fernanda da Silva</p>
+            <p>1997</p>
+        </div>
+        <div class="desc_filhos" id="desc_filho3">
+            <p>Jéssica da Silva</p>
+            <p>2012</p>
+        </div>
+    </section> 
+      
+</body>
+</html>
