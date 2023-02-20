@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu 1º formulário</h1>  
+    <form method="post" action="cadastro.php" autocomplete="off">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">
+                    Nome:
+                </label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="isobrenome">
+                    Sobrenome:
+                </label>
+                <input type="text" name="sobrenome" id="isobrenome">
+            </p>
+            <p>
+                <label for="iemail">
+                    e-mail:
+                </label>
+                <input type="email" name="email" id="iemail">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Gênero</legend>
+            <input type="radio" name="genero" id="igmasc" value="m">
+            <label for="igmasc">Masculino</label>
+            <input type="radio" name="genero" id="igfem" value="f">
+            <label for="igfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="ifut">
+            <label for="ifut">futebol</label>
+            <input type="checkbox" name="bas" id="ibas">
+            <label for="ibas">basquete</label>
+            <input type="checkbox" name="vol" id="ivol">
+            <label for="ivol">volei</label>
+            <input type="checkbox" name="kun" id="ikun">
+            <label for="ikun">kung-fu</label>
+        </fieldset>
+        <fieldset>
+            <legend>Cor Favorita</legend>
+            <input type="color" name="cor" id="icor">
+        </fieldset>
+        <fieldset>
+            <legend>Nível de Satisfação</legend>
+            <input type="range" name="satisfacao" id="isatisfacao" min="1" max="5">
+        </fieldset>
+        <fieldset>
+            <legend>Escolha uma imagem de perfil</legend>
+            <input type="file" name="arq" id="iarq">
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>  
+</body>
+</html>
