@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Outros elementos para formulários</h1>  
+    <form method="post" action="cadastro.php" autocomplete="off">
+        <fieldset>
+            <legend>Estado</legend>
+            <select name="estado" id="iest">
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Profissão</legend>
+            <input type="text" name="profissao" id="iprof" list="prof_list">
+            <datalist id="prof_list">
+                <option>Programador</option>
+                <option>Médico</option>
+                <option>Arquiteto</option>
+                <option>Bancário</option>
+                <option>Contador</option>
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Texto Livre</legend>
+            <textarea name="txt" id="itxt" cols="30" rows="10"></textarea>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>  
+</body>
+</html>
