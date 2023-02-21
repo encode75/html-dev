@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 4</title>
+</head>
+<body>
+    <form method="post" action="cadastro.php">
+        <label for="iano">Ano que você nasceu:</label>
+        <input type="number" name="ano" id="iano" min="1900" max="1900" required oninput="calcIdade()">
+        <br/>
+
+        <label for="iidade">Sua idade:</label>
+        <output id="iidade">0</output>
+        <br/>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    <script>
+        function anoAtual(){
+            ret = new Date().getFullYear();
+            console.log(typeof(ret));
+            return ret;
+        }
+        function calcIdade(){
+            iidade.innerHTML = anoAtual() - Number(iano.value);
+        }
+
+        iano.setAttribute("max", anoAtual().toString());
+
+    </script>
+</body>
+</html>
