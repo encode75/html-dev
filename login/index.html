@@ -17,16 +17,22 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <div class="campo">
-                    <img src="./imagens/user.png" width="24px" height="24px" alt="usuário">
-                    <input type="email" name="login" id="ilogin" placeholder="digite seu e-mail">
-                    <label for="ilogin">Login</label>
-                </div>
-                <div class="campo">
-                    <img src="./imagens/passwd.png" width="24px" height="24px" alt="">
-                    <input type="password" name="senha" id="isenha">
-                    <label for="isenha">Senha</label>
-                </div>
+                <form action="post">
+                    <div class="campo">
+                        <img src="./imagens/user.png" width="30px" height="30px" alt="usuário">
+                        <input type="email" name="login" id="ilogin" placeholder="digite seu e-mail">
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <img src="./imagens/passwd.png" width="30px" height="30px" alt="">
+                        <input type="password" name="senha" id="isenha">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <div class="botoes">
+                        <input type="submit" value="Entrar">
+                        <a href="" class="botao">Esqueci a senha</a>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
